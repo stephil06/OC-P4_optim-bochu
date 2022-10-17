@@ -1049,3 +1049,15 @@ h4 {
     text-transform: uppercase;
     font-weight: 900;
 }
+
+/* OPTIM_11 balises sémantiques : Pour la balise <address> "contact@agencelapanthere.com" : passage d'italic (par défaut) à normal */
+ address a {
+    font-style: normal; 
+    font-size: 0.9em;
+}
+
+address {
+    font-style: normal;
+}
+
+/* fin OPTIM_11 */
