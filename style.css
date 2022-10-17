@@ -1061,3 +1061,32 @@ address {
 }
 
 /* fin OPTIM_11 */
+
+/* OPTIM_12 Remplacer les images contenant du texte par le texte uniquement */
+.c_titre-texte {
+    width: 60%; 
+    margin: auto;
+    font-size: 22px;
+    font-family: Georgia, serif;
+}
+
+.c_citation-texte {
+    font-size: 20px; 
+    width: 85%; 
+    margin: auto;
+    font-style: italic;
+}
+
+.c_pdg-texte {
+    font-size: 20px;
+    font-family: Georgia, serif;
+}
+
+.c_titre-texte-bas {
+    width: 45%; 
+    margin: auto;
+    font-size: 22px;
+    font-family: Georgia, serif;
+}
+
+/* fin OPTIM_12 */
