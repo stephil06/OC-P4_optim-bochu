@@ -12,8 +12,8 @@
 	<!-- OPTIM_3 -->
 	<meta name="description" content="Pour votre projet de création ou d'amélioration de votre site web, contacter La Panthère, agence de web design située à Lyon.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
@@ -76,10 +76,14 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
+				<!-- OPTIM_21 Contraste de couleurs tc-white remplacé par tc-white-contact -->
+				<!-- <h1 class="text-center hero-bloc-text tc-white"> -->
+					<h1 class="text-center hero-bloc-text tc-white-contact">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
+				<!-- OPTIM_21 Contraste de couleurs tc-white remplacé par tc-white-contact -->
+				<!-- <p class="text-center mg-lg tc-white tight-width-whitespace"> -->
+					<p class="text-center mg-lg tc-white-contact tight-width-whitespace"></p>
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -98,29 +102,32 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<!-- <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"> -->
-					<!-- validateur -->
 					<form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">	
 					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required>
+
+						<!-- OPTIM_20 Lier chaque <label> à son <input> -->
+						<!-- <label>Nom </label><input id="name" class="form-control" required> -->
+						<label for="name">Nom</label>
+						<input id="name" class="form-control" required>	
+
+						<!-- <label for="cheese">Do you like cheese?</label>
+						<input type="checkbox" name="cheese" id="cheese"> -->
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
 						<input id="email" class="form-control" type="email" required>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
 						<!-- OPTIM_10 Supprimer type= "email" -->
 						<input class="form-control" type="text" required id="input_504">
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
@@ -155,29 +162,35 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<!-- OPTIM_21 corriger le contraste de couleurs trop faible : remplacer white par c_footer__p--couleur -->
+				<!-- <p class="text-center white"> -->
+					<p class="text-center c_footer__p--couleur">
 					Agence La Panthère - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<!-- OPTIM_8 Mettre à jour les liens des réseaux sociaux -->
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
+							<!-- OPTIM_15 ajout de aria-label -->
+							<a aria-label="Twitter" class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+							<!-- OPTIM_15 ajout de aria-label -->
+							<a aria-label="Facebook" class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
+							<!-- OPTIM_15 ajout de aria-label -->
+							<a aria-label="Dribble" class="social" href="https://dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
+							<!-- OPTIM_15 ajout de aria-label -->
+							<a aria-label="Instagram" class="social" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>

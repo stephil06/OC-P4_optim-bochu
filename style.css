@@ -735,9 +735,17 @@ h4 {
     margin-top: 24px;
 }
 
+/* OPTIM_21 */
 .white {
     color: #FFFFFF!important;
 }
+.c_footer__p--couleur {
+    color: #373737!important;
+}
+/* OPTIM_21 fin */
+
+
+
 
 .portfolio-thumb {
     margin-bottom: 24px;
@@ -774,12 +782,27 @@ h4 {
     background-color: #F3976C;
 }
 
+/* OPTIM_21 Contraste de couleurs tc-white remplacé par tc-white-contact */
+.tc-white-contact {
+    
+    color: #1E1E1E!important;
+}
+
 .tc-white {
+    
     color: #F3976C!important;
 }
 
+ /* OPTIM_21 corriger le contraste de couleurs trop faible */
+.tc-white-accessibilite {
+    color: orange!important; /* #D04A0A!important; */
+}
+
+
 .btn-atomic-tangerine {
-    background: #F3976C;
+    /* OPTIM_21 corriger le contraste de couleurs trop faible */
+    /* background: #F3976C; */ 
+    background: #D04A0A;
     color: #FFFFFF!important;
 }
 

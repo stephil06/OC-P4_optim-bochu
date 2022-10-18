@@ -242,7 +242,7 @@
 				<!-- convertir BMP en JPG -->
 				<!-- <a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a> -->
 				<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="img/4.jpg" class="img-responsive portfolio-thumb" 
-					alt="Photo d'un bureau sur lequel deux collaboratrices travaillent, l'une sur ordinateur, l'autre sur tablette"></a>
+					alt="Photo d'un bureau sur lequel deux salariés travaillent, l'un sur PC, l'autre sur tablette"></a>
 					<!-- OPTIM_14 ALT -->
 				<!-- fin convertir BMP en JPG -->
 				<h3 class="mg-md text-center">
@@ -263,7 +263,8 @@
 <section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
-			<h2 class="mg-md text-center tc-white">
+			<!-- OPTIM_21 contraste via "tc-white-accessibilite" -->
+			<h2 class="mg-md text-center tc-white-accessibilite">
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
@@ -283,7 +284,9 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<!-- OPTIM_21 corriger le contraste de couleurs trop faible : remplacer white par c_footer__p--couleur -->
+				<!-- <p class="text-center white"> -->
+				<p class="text-center c_footer__p--couleur">	
 					Agence La Panthère - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
@@ -291,24 +294,27 @@
 					<div class="col-sm-3">
 						<div class="text-center">
 							<!-- <a class="social" href="index.html"> -->
-								<a class="social" href="https://twitter.com">
-							<span class="fa fa-twitter icon-md"></span></a>
+								<!-- OPTIM_15 ajout de aria-label -->
+								<a aria-label="Twitter" class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+							<!-- OPTIM_15 ajout de aria-label -->
+							<a aria-label="Facebook" class="social" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
 							<!-- dribbble.com: site web qui regroupe des travaux de designer (portfolio)-->
-							<a class="social" href="https://dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
+							<!-- OPTIM_15 ajout de aria-label -->
+							<a aria-label="Dribble" class="social" href="https://dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
+							<!-- OPTIM_15 ajout de aria-label -->
+							<a aria-label="Instagram" class="social" href="https://www.instagram.com"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 					<!-- OPTIM_6 -->
