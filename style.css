@@ -10,7 +10,8 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    /* OPTIM_22 Rendre le focus visible */
+    outline: 4px solid grey; /*  none!important; */
 }
 
 a:hover {
@@ -461,7 +462,8 @@ nav .caret {
 }
 
 button {
-    outline: none!important;
+    /* OPTIM_22 Rendre le focus visible */
+    outline: 4px solid grey; /* none!important; */
 }
 
 .btn-rd {
