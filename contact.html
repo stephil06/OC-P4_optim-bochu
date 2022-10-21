@@ -14,15 +14,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
 
+	<!-- 
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	
+	-->
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+
     <!-- OPTIM_5 ajout du defer -->
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
-	<script src="./js/bootstrap.min.js" defer></script>
-	<script src="./js/blocs.min.js" defer></script>
+	<!-- <script src="./js/bootstrap.min.js" defer></script> --> <script src="./js/bootstrap.js" defer></script>
+	<!-- <script src="./js/blocs.min.js" defer></script> -->	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jqBootstrapValidation.js" defer></script>
 	<script src="./js/formHandler.js" defer></script>
 	<!-- fin OPTIM_5 -->
@@ -136,15 +143,17 @@
 					</button>
 				</form>
 			</div>
-			<div class="col-sm-6">
-					<!-- OPTIM_11 balises sémantiques --> 
-					<!-- contact@agencelapanthere.com <br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br> -->
+			<!-- <div class="col-sm-6">
+					 
+					<p class="text-center"> 
+					<br><br>contact@agencelapanthere.com <br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 					<address>
 						<a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a>
 					</address>
-					<address>2 place Sathonay 69001 Lyon</address>
+					<address>2 place Sathonay 69001 Lyon</address> </p>
 					<p>Ouvert de 9h à 18h, du lundi au vendredi</p>
 			</div>
+			-->
 		</div>
 	</div>
 </section>
@@ -166,11 +175,19 @@
 				<!-- <p class="text-center white"> -->
 					<p class="text-center c_footer__p--couleur">
 					Agence La Panthère - Agence web basée à Lyon.<br>
+					<!-- OPTIM_11 balises sémantiques -->
+					<address class="text-center c_footer__p--couleur">
+						<a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a>
+					</address>
+				</p>
+				<p class="text-center c_footer__p--couleur"> 		
+					2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</p>
 				<div class="row row-no-gutters social">
+
 					<!-- OPTIM_8 Mettre à jour les liens des réseaux sociaux -->
 					<div class="col-sm-3">
-						<div class="text-center">
+						<div class="text-center c_footer__p--couleur">
 							<!-- OPTIM_15 ajout de aria-label -->
 							<a aria-label="Twitter" class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
