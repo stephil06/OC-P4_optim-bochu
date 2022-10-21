@@ -10,8 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    /* OPTIM_22 Rendre le focus visible */
-    outline: 4px solid grey; /*  none!important; */
+    /* OPTIM_22 outline: none!important; */
 }
 
 a:hover {
@@ -336,6 +335,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+
 }
 
 .navbar-toggle {
@@ -462,8 +462,7 @@ nav .caret {
 }
 
 button {
-    /* OPTIM_22 Rendre le focus visible */
-    outline: 4px solid grey; /* none!important; */
+    /* OPTIM_22 outline: none!important; */
 }
 
 .btn-rd {
@@ -902,10 +901,11 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+    /*
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -914,8 +914,9 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
+       /* padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+        */
     }
 }
 
@@ -1118,3 +1119,8 @@ address {
 }
 
 /* fin OPTIM_12 */
+
+/* OPTIM_22 Rendre le focus visible pour les liens <a> & les <button> (sous forme de tirets) */
+a:focus-visible, button:focus-visible {
+    outline: 4px dashed red;
+}
