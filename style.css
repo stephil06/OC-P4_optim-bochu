@@ -736,13 +736,21 @@ h4 {
     margin-top: 24px;
 }
 
-/* OPTIM_21 */
+/* OPTIM_21 Augmenter le Contraste de couleurs 
+    & la taille de la Police (pour plus de lisibilité)
+*/
 .white {
     color: #FFFFFF!important;
 }
-.c_footer__p--couleur {
-    color: #373737!important;
+.c_footer__p--couleur, address {
+    color: #373737!important; font-size:15px!important;
 }
+
+.c_police--taille {
+    font-size:15px!important;
+}
+
+
 /* OPTIM_21 fin */
 
 
@@ -1082,7 +1090,8 @@ h4 {
 /* OPTIM_11 balises sémantiques : Pour la balise <address> "contact@agencelapanthere.com" : passage d'italic (par défaut) à normal */
  address a {
     font-style: normal; 
-    font-size: 0.9em;
+    font-size: 15px;/* 0.9em; */ 
+    color: #373737!important;
 }
 
 address {
@@ -1130,4 +1139,4 @@ a:focus-visible {
   button:focus, input:focus-visible, textarea:focus-visible, .c_clavier:focus-visible {
     background-color: yellow;
 }
-/* OPTIM_22 fin */
+/* OPTIM_22 fin */ 
