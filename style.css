@@ -1120,7 +1120,14 @@ address {
 
 /* fin OPTIM_12 */
 
-/* OPTIM_22 Rendre le focus visible pour les liens <a> & les <button> (sous forme de tirets) */
-a:focus-visible, button:focus-visible {
-    outline: 4px dashed red;
+/* OPTIM_22 Rendre le focus visible pour les liens <a> (sous forme de tirets JAUNE) */
+a:focus-visible {
+    outline: 4px dashed yellow;
 }
+
+/* OPTIM_22 Rendre le focus visible pour les <button>, <input>, <textarea>, (sous forme d'un fond JAUNE) */
+/* "c_clavier" correspond aux Liens "contact" */
+  button:focus, input:focus-visible, textarea:focus-visible, .c_clavier:focus-visible {
+    background-color: yellow;
+}
+/* OPTIM_22 fin */
