@@ -678,7 +678,8 @@ a {
 }
 
 p {
-    font-size: 11px;
+    /* OPTIM_24 */
+    font-size: 12px; /* 11px; */
 }
 
 .tight-width-whitespace {
